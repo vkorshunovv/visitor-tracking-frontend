@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import VisitorReducer from "./features/VisitorSlice";
+import VisitorReducer from "./features/visitors/visitorSlice";
 
 const store = configureStore({
   reducer: {
-    visitor: VisitorReducer,
+    visitors: VisitorReducer,
   },
 });
 

@@ -1,7 +1,12 @@
 import "./App.css";
+import VisitorTracking from "./components/VisitorTracking";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <VisitorTracking />
+    </>
+  );
 }
 
 export default App;
