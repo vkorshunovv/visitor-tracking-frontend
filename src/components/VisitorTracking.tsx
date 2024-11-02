@@ -24,16 +24,17 @@ const VisitorTracking: React.FC = () => {
       <h1>Visitor Tracking</h1>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
-      <ul>
+      <ol>
         {visitors.map((visitor) => (
           <li key={visitor.id}>
+            <span></span>
             <strong>IP:</strong> {visitor.ip} <br />
             <strong>User Agent:</strong> {visitor.userAgent} <br />
             <strong>Timestamp:</strong>{" "}
             {new Date(visitor.timestamp).toLocaleString()}
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 };
